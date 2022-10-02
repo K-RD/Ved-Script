@@ -1,0 +1,14 @@
+{
+    "name": "Ved Script",
+    "description": "Stable version created for using temporary",
+    "author": "Robind kumar",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_title": "Ved Script"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
