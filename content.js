@@ -59,7 +59,7 @@ for (let i=1; i<20;i++){
 
 
 
-//Adding property of heading-script class in head tag using style tag
+//Adding property of heading-script class in head element using style attribute
 let hoverStyle=document.createElement('style');
 hoverStyle.textContent=`
         .heading-script{
@@ -90,6 +90,7 @@ hoverStyle.textContent=`
 document.head.appendChild(hoverStyle);
 
 
+//this functions copies text parameter on clipboard
 function copyToClipboard(text){
     const elem = document.createElement('textarea');
     elem.value = text;
@@ -99,12 +100,15 @@ function copyToClipboard(text){
     document.body.removeChild(elem);
 }
 
+
+//this functions paste the script by setting the value of text-area
 function pasteScript(txt){
     console.log('inside pasteScript');
     let temp=document.getElementById('text-area');
     temp.value=txt;
 }
 
+//main function which is called when title-button is clicked
 var script;
 function call(no){
     console.log("inside call");
@@ -115,7 +119,7 @@ function call(no){
 }
 
 
-
+//Added eventlistner on title-button click
 document.getElementById("heading1").addEventListener("click", () => (call(1)));
 document.getElementById("heading2").addEventListener("click", () => (call(2)));
 document.getElementById("heading3").addEventListener("click", () => (call(3)));
