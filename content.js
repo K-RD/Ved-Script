@@ -1,18 +1,12 @@
-
-// alert('Hello, world!');
-console.log('Starting...');
-
-
-
-
-
+console.log("Inside content.js");
+//Chat script in array
 const arr=[
     " ",
-    "Hello students! Welcome to the session. We hope you all are doing well. I am Rahul kumar, Your Class Teacher for the session. Feel free to ask doubts related to subject. Happy learning.#WarmVelcome",
-    "Hey kids if you are unable to see and hear sir then plz refresh once. #Refresh",
-    "I have done B.tech from iit(ism) Dhanbad in mining engg....But my passion is teaching and I am teacher since 2019, So, let me know if you guys come across any doubt in the session. #MilkeMachateHain",
+    "Hello students! Welcome to the session. We hope you all are doing well. I am name, Your Class Teacher for the session. Feel free to ask doubts related to subject. Happy learning.#WarmVelcome",
+    "Hey kids if you are unable to see and hear MT then plz refresh once. #Refresh",
+    "I have done B.tech from Collage city in branch But my passion is teaching and I am teacher since year, So, let me know if you guys come across any doubt in the session. #MilkeMachateHain",
     "We hope that you have gone through the mutual agreement and you will abide by it . #VAreHere",
-    "If any student is found asking or sharing any personal info or any kind of telegram/whatsapp group links will be blocked ,as it is against our child safety policy #Zerotolerance",
+    "If any student is found asking or sharing any personal info or any kind of telegram/whatsapp group links will be blocked, as it is against our child safety policy #Zerotolerance",
     "These are the concepts we gonna cover in today's session, stay active. #GetSetGo" ,
     "Well done students, I can see lots of you have given the responses.Remaining students, please give your answers, don't be afraid of being incorrect. #YouAllAreOP",
     "Let's find the mistake in the given slide everyone, write down in the public chat #DiscussionTime",
@@ -21,8 +15,8 @@ const arr=[
     "Answer baccha log. Don't worry whether it will be right or wrong just do it. I know you guys can do it. #QuizTime" ,
     "Keep it up guys!! congrats to all fastest fingers list winner #FastAndFurious",
     "Amazing , % of you gave correct answers. that's a proud moment, deserve a round of applause ðŸ‘. #BullsEye",
-    "Amazing performances students, congrats to all  ##keepitup",
-    "So time to see how much you learned.  Nothing new there! Use the prevoius concepts to solve this. And hit the poll. All the best!! #LetsInteract",
+    "Amazing performance students, congrats to all  ##keepitup",
+    "So its time to see how much you learned.  Nothing new there! Use the prevoius concepts to solve this. And hit the poll. All the best!! #LetsInteract",
     "Claps for everyone, you guys did very well. Let's maintain this pace till the last minute of class. Show your ranks in chatbox. #YouAllAreRockstar",
     "Awesome blossom guys you all are very talented. Great to see your talents #SamajhAyegaToMazaAyega",
     "Student's I hope you all had an amazing experience, kindly give us feedback and share your thoughts, ideas, views on the session. #Feedback",
@@ -31,27 +25,21 @@ const arr=[
     " "
 ];
 
-const title=["","welcome","Hear & see","About CT","Agreement","Child Safety","Learning Outcomes","Lets Discuss","Silent Mode","Milestone 1","Quiz 1","Quiz 2","Fastest Finger","Result Hotspot/Quiz", "Teacher Interaction","Interactivity Pod","Milestone 2","Summary","Feedback","Thank You"];
+//script title
+const title=["","welcome","Hear & see","About CT","Mutual Agreement","Child Safety","Learning Outcomes","Lets Discuss","Silent Mode","Milestone 1","Quiz 1","Quiz 2","Fastest Finger","Result Hotspot/Quiz", "Teacher Interaction","Interactivity Pod","Milestone 2","Summary","Feedback","Thank You"];
 
+//creating title-button-container
 let wrapper=document.createElement('div');
 wrapper.id='box-wrapper';
-// wrapper.style.height='500px';
-// wrapper.style.width='500px';
-// wrapper.style.zIndex='10';
-// wrapper.style.backgroundColor='lightsalmon';
-// wrapper.style.position='absolute';
-// wrapper.style.top='100px';
-// wrapper.style.left='100px';
 wrapper.setAttribute("style", "width:230px; padding:10px;  z-index:1; position:absolute; top:0px; left:50px; ");
-// wrapper.style=wrapperStyle;
 console.log('wrapper style appended');
 
-
+//Appending title-button-container in body
 let bdy=document.getElementsByTagName('body');
 bdy[0].appendChild(wrapper);
 console.log('body appended');
 
-
+//appending title-button in title-button-container
 for (let i=1; i<20;i++){
     //adding element in wrapper
     let head1=document.createElement('button');
@@ -69,10 +57,7 @@ for (let i=1; i<20;i++){
     console.log(name +'appended');
 }
 
-// background-color: #888;
-// background-color:lightsalmon;
-// "height:80%;
-// color:black; font-size:20px;
+
 
 //Adding property of heading-script class in head tag using style tag
 let hoverStyle=document.createElement('style');
@@ -82,7 +67,10 @@ hoverStyle.textContent=`
             height:30px; 
             color:black; 
             font-size:15px; 
-            width:150px; 
+            width:150px;
+            overflow: hidden;
+            word-wrap: break-word;
+            text-overflow: ellipsis; 
             border-radius:5px;  
             z-index:1; 
             margin: 2px; 
